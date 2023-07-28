@@ -1,11 +1,13 @@
 import { ThemeProvider } from "styled-components";
 import { HomePageBlog } from "./pages/BlogHome";
-import { GlobalTheme } from "./styles/global";
+import { GlobalStyles } from "./styles/global";
+import { defaultTheme } from "./styles/themes/default";
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <GlobalTheme/>
+      <GlobalStyles/>
+      
       <HomePageBlog/>
     </ThemeProvider>
   )
