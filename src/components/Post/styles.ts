@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const PostContainer = styled.div`
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  background: ${props => props.theme['']};
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  display: grid;
-
+  background-color: ${props => props.theme['azul-700']};
+  
   border-radius: 6px;
 
   margin-top: -5rem;
+
+  header{
+    color: ${props => props.theme['azul-100']};
+  }
+
 `
